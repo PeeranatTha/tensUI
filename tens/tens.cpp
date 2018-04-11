@@ -10,12 +10,12 @@ tens::tens(QWidget *parent) :
     //UI
     QLabel *TestLabel = new QLabel("test");
     QPushButton *ConnectButton = new QPushButton("Connect");
-    QTextEdit *TestEdit = new QTextEdit("my text");
+    QLabel *OutLabel = new QLabel("my text");
 
     QVBoxLayout *mainLayout = new QVBoxLayout;
     mainLayout->addWidget(TestLabel);
     mainLayout->addWidget(ConnectButton);
-    mainLayout->addWidget(TestEdit);
+    mainLayout->addWidget(OutLabel);
     setLayout(mainLayout);
 
     setWindowTitle(tr("Tens"));
@@ -29,6 +29,7 @@ void tens::on_ConnectButton_clicked()
     m_pClientsocket->connectToHost(IP,port);
          connect(m_pClientsocket, SIGNAL(error(QAbstractSocket::SocketError)), this, SLOT(displayError(QAbstractSocket::SocketError)));
 */
+
 
 }
 
