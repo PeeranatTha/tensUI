@@ -239,6 +239,7 @@ Makefile: ../tens/tens.pro C:/Qt/5.10.0/mingw53_32/mkspecs/win32-g++/qmake.conf 
 		C:/Qt/5.10.0/mingw53_32/lib/qtmaind.prl \
 		C:/Qt/5.10.0/mingw53_32/lib/Qt5Widgets.prl \
 		C:/Qt/5.10.0/mingw53_32/lib/Qt5Gui.prl \
+		C:/Qt/5.10.0/mingw53_32/lib/Qt5Network.prl \
 		C:/Qt/5.10.0/mingw53_32/lib/Qt5Core.prl
 	$(QMAKE) -o Makefile ..\tens\tens.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 C:/Qt/5.10.0/mingw53_32/mkspecs/features/spec_pre.prf:
@@ -419,6 +420,7 @@ C:/Qt/5.10.0/mingw53_32/mkspecs/features/lex.prf:
 C:/Qt/5.10.0/mingw53_32/lib/qtmaind.prl:
 C:/Qt/5.10.0/mingw53_32/lib/Qt5Widgets.prl:
 C:/Qt/5.10.0/mingw53_32/lib/Qt5Gui.prl:
+C:/Qt/5.10.0/mingw53_32/lib/Qt5Network.prl:
 C:/Qt/5.10.0/mingw53_32/lib/Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\tens\tens.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
