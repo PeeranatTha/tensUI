@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QTcpSocket>
+#include <QPushButton>
 
 class tens : public QWidget
 {
@@ -17,10 +18,11 @@ public:
 
 private slots:
     void displayError ( QAbstractSocket::SocketError socketError );
-
+private slots:
     void on_ConnectButton_clicked();
 
 private:
+    QPushButton *ConnectButton;
 
 
 };

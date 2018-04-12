@@ -211,6 +211,10 @@ release/moc_tens.cpp: C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.10.0/mingw53_32/include/QtNetwork/qtnetworkglobal.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtNetwork/qtnetwork-config.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtNetwork/qabstractsocket.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtGui/qicon.h \
 		../tens/tens.h \
 		release/moc_predefs.h \
 		C:/Qt/5.10.0/mingw53_32/bin/moc.exe
@@ -343,6 +347,10 @@ release/main.o: ../tens/main.cpp ../tens/tens.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtNetwork/qtnetworkglobal.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtNetwork/qtnetwork-config.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtNetwork/qabstractsocket.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtGui/qicon.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QApplication \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qapplication.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtCore/qcoreapplication.h \
@@ -461,6 +469,10 @@ release/tens.o: ../tens/tens.cpp ../tens/tens.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtNetwork/qtnetworkglobal.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtNetwork/qtnetwork-config.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtNetwork/qabstractsocket.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QPushButton \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.10.0/mingw53_32/include/QtGui/qicon.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QtWidgets \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/QtWidgetsDepends \
 		C:/Qt/5.10.0/mingw53_32/include/QtCore/QtCore \
@@ -601,7 +613,6 @@ release/tens.o: ../tens/tens.cpp ../tens/tens.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtCore/QRect \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qsurface.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qsurfaceformat.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtGui/qicon.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qbitmap.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qclipboard.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qdesktopservices.h \
@@ -683,7 +694,6 @@ release/tens.o: ../tens/tens.cpp ../tens/tens.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qtexttable.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qvalidator.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtGui/qtguiversion.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qstyleoption.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qabstractspinbox.h \
@@ -714,7 +724,6 @@ release/tens.o: ../tens/tens.cpp ../tens/tens.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qcolumnview.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qcombobox.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qcommandlinkbutton.h \
-		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qcommonstyle.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qcompleter.h \
 		C:/Qt/5.10.0/mingw53_32/include/QtWidgets/qdatawidgetmapper.h \

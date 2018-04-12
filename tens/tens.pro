@@ -32,4 +32,3 @@ SOURCES += \
 HEADERS += \
         tens.h
 
-FORMS +=
