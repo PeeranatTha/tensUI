@@ -10,7 +10,7 @@ tens::tens(QWidget *parent) :
     //UI
     QLabel *TestLabel = new QLabel("test");
     ConnectButton = new QPushButton("Connect", this);
-    QLabel *OutLabel = new QLabel("my text");
+    OutLabel = new QLabel("my text");
 
     connect(ConnectButton, SIGNAL (released()), this, SLOT (on_ConnectButton_clicked()));
 
@@ -26,15 +26,10 @@ tens::tens(QWidget *parent) :
 //IP&PORT
 void tens::on_ConnectButton_clicked()
 {
-    /*QString IP = "192.168.4.1";
+    QString IP = "192.168.4.1";
     int port = 8888;
     m_pClientsocket->connectToHost(IP,port);
          connect(m_pClientsocket, SIGNAL(error(QAbstractSocket::SocketError)), this, SLOT(displayError(QAbstractSocket::SocketError)));
-*/
-    ConnectButton->setText("Example");
-
-
-
 
 }
 
