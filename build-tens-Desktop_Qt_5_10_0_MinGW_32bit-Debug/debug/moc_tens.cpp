@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_tens_t {
-    QByteArrayData data[6];
-    char stringdata0[85];
+    QByteArrayData data[1];
+    char stringdata0[5];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -31,16 +31,10 @@ struct qt_meta_stringdata_tens_t {
     )
 static const qt_meta_stringdata_tens_t qt_meta_stringdata_tens = {
     {
-QT_MOC_LITERAL(0, 0, 4), // "tens"
-QT_MOC_LITERAL(1, 5, 12), // "displayError"
-QT_MOC_LITERAL(2, 18, 0), // ""
-QT_MOC_LITERAL(3, 19, 28), // "QAbstractSocket::SocketError"
-QT_MOC_LITERAL(4, 48, 11), // "socketError"
-QT_MOC_LITERAL(5, 60, 24) // "on_ConnectButton_clicked"
+QT_MOC_LITERAL(0, 0, 4) // "tens"
 
     },
-    "tens\0displayError\0\0QAbstractSocket::SocketError\0"
-    "socketError\0on_ConnectButton_clicked"
+    "tens"
 };
 #undef QT_MOC_LITERAL
 
@@ -50,50 +44,26 @@ static const uint qt_meta_data_tens[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       0,    0, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
 
- // slots: name, argc, parameters, tag, flags
-       1,    1,   24,    2, 0x08 /* Private */,
-       5,    0,   27,    2, 0x08 /* Private */,
-
- // slots: parameters
-    QMetaType::Void, 0x80000000 | 3,    4,
-    QMetaType::Void,
-
        0        // eod
 };
 
 void tens::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    if (_c == QMetaObject::InvokeMetaMethod) {
-        tens *_t = static_cast<tens *>(_o);
-        Q_UNUSED(_t)
-        switch (_id) {
-        case 0: _t->displayError((*reinterpret_cast< QAbstractSocket::SocketError(*)>(_a[1]))); break;
-        case 1: _t->on_ConnectButton_clicked(); break;
-        default: ;
-        }
-    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        switch (_id) {
-        default: *reinterpret_cast<int*>(_a[0]) = -1; break;
-        case 0:
-            switch (*reinterpret_cast<int*>(_a[1])) {
-            default: *reinterpret_cast<int*>(_a[0]) = -1; break;
-            case 0:
-                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QAbstractSocket::SocketError >(); break;
-            }
-            break;
-        }
-    }
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
 }
 
 const QMetaObject tens::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_tens.data,
+    { &QWizard::staticMetaObject, qt_meta_stringdata_tens.data,
       qt_meta_data_tens,  qt_static_metacall, nullptr, nullptr}
 };
 
@@ -108,23 +78,210 @@ void *tens::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_tens.stringdata0))
         return static_cast<void*>(this);
-    return QWidget::qt_metacast(_clname);
+    return QWizard::qt_metacast(_clname);
 }
 
 int tens::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QWidget::qt_metacall(_c, _id, _a);
-    if (_id < 0)
-        return _id;
-    if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
-            qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
-    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
-            qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
-    }
+    _id = QWizard::qt_metacall(_c, _id, _a);
+    return _id;
+}
+struct qt_meta_stringdata_WelcomePage_t {
+    QByteArrayData data[1];
+    char stringdata0[12];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_WelcomePage_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_WelcomePage_t qt_meta_stringdata_WelcomePage = {
+    {
+QT_MOC_LITERAL(0, 0, 11) // "WelcomePage"
+
+    },
+    "WelcomePage"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_WelcomePage[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+void WelcomePage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObject WelcomePage::staticMetaObject = {
+    { &QWizardPage::staticMetaObject, qt_meta_stringdata_WelcomePage.data,
+      qt_meta_data_WelcomePage,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *WelcomePage::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *WelcomePage::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_WelcomePage.stringdata0))
+        return static_cast<void*>(this);
+    return QWizardPage::qt_metacast(_clname);
+}
+
+int WelcomePage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QWizardPage::qt_metacall(_c, _id, _a);
+    return _id;
+}
+struct qt_meta_stringdata_InfoPage_t {
+    QByteArrayData data[1];
+    char stringdata0[9];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_InfoPage_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_InfoPage_t qt_meta_stringdata_InfoPage = {
+    {
+QT_MOC_LITERAL(0, 0, 8) // "InfoPage"
+
+    },
+    "InfoPage"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_InfoPage[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+void InfoPage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObject InfoPage::staticMetaObject = {
+    { &QWizardPage::staticMetaObject, qt_meta_stringdata_InfoPage.data,
+      qt_meta_data_InfoPage,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *InfoPage::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *InfoPage::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_InfoPage.stringdata0))
+        return static_cast<void*>(this);
+    return QWizardPage::qt_metacast(_clname);
+}
+
+int InfoPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QWizardPage::qt_metacall(_c, _id, _a);
+    return _id;
+}
+struct qt_meta_stringdata_SetupPage_t {
+    QByteArrayData data[1];
+    char stringdata0[10];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_SetupPage_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_SetupPage_t qt_meta_stringdata_SetupPage = {
+    {
+QT_MOC_LITERAL(0, 0, 9) // "SetupPage"
+
+    },
+    "SetupPage"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_SetupPage[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       0,    0, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+       0        // eod
+};
+
+void SetupPage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    Q_UNUSED(_o);
+    Q_UNUSED(_id);
+    Q_UNUSED(_c);
+    Q_UNUSED(_a);
+}
+
+const QMetaObject SetupPage::staticMetaObject = {
+    { &QWizardPage::staticMetaObject, qt_meta_stringdata_SetupPage.data,
+      qt_meta_data_SetupPage,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *SetupPage::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *SetupPage::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_SetupPage.stringdata0))
+        return static_cast<void*>(this);
+    return QWizardPage::qt_metacast(_clname);
+}
+
+int SetupPage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QWizardPage::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

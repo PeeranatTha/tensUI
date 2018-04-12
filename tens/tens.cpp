@@ -3,28 +3,62 @@
 #include <QMessageBox>
 
 tens::tens(QWidget *parent) :
-    QWidget(parent)
+    QWizard(parent)
 {
-    m_pClientsocket = new QTcpSocket(this);
-
-    //UI
-    QLabel *TestLabel = new QLabel("test");
-    ConnectButton = new QPushButton("Connect", this);
-    OutLabel = new QLabel("my text");
-
-    connect(ConnectButton, SIGNAL (released()), this, SLOT (on_ConnectButton_clicked()));
-
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    mainLayout->addWidget(TestLabel);
-    mainLayout->addWidget(ConnectButton);
-    mainLayout->addWidget(OutLabel);
-    setLayout(mainLayout);
-
     setWindowTitle(tr("Tens"));
+
+    addPage(new WelcomePage);
+    addPage(new InfoPage);
+    addPage(new SetupPage);
+}
+
+
+//Page1
+WelcomePage::WelcomePage(QWidget *parent)
+    : QWizardPage(parent)
+{
+    setTitle(tr("Welcome"));
+
+    WelcomeLabel = new QLabel(tr("Welcome"));
+
+    QVBoxLayout *layout = new QVBoxLayout;
+    layout->addWidget(WelcomeLabel);
+    setLayout(layout);
+}
+
+
+//Page2
+InfoPage::InfoPage(QWidget *parent)
+    : QWizardPage(parent)
+{
+    setTitle(tr("Subject Information"));
+
+    InfoLabel = new QLabel(tr("Subject Info"));
+
+    QVBoxLayout *layout = new QVBoxLayout;
+    layout->addWidget(InfoLabel);
+    setLayout(layout);
+}
+
+
+//Page3
+SetupPage::SetupPage(QWidget *parent)
+    : QWizardPage(parent)
+{
+    setTitle(tr("Setup"));
+
+    //m_pClientsocket = new QTcpSocket(this);
+
+    ConnectButton = new QPushButton("Connect", this);
+    //connect(ConnectButton, SIGNAL (released()), this, SLOT (on_ConnectButton_clicked()));
+
+    QVBoxLayout *layout = new QVBoxLayout;
+    layout->addWidget(ConnectButton);
+    setLayout(layout);
 }
 
 //IP&PORT
-void tens::on_ConnectButton_clicked()
+/*void tens::on_ConnectButton_clicked()
 {
     QString IP = "192.168.4.1";
     int port = 8888;
@@ -39,7 +73,7 @@ void tens::displayError ( QAbstractSocket::SocketError socketError )
          case QAbstractSocket::RemoteHostClosedError:
              break;
          case QAbstractSocket::HostNotFoundError:
-             QMessageBox::information(this, tr("Fortune Client"),
+             QMessageBox::information(this, tr("Tens"),
                                       tr("The host was not found. Please check the "
                                          "host name and port settings."));
              break;
@@ -55,6 +89,6 @@ void tens::displayError ( QAbstractSocket::SocketError socketError )
                                       tr("The following error occurred: %1.")
                                       .arg(m_pClientsocket->errorString()));
          }
-}
+}*/
 
 
